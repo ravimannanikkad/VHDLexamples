@@ -1,11 +1,11 @@
 ----------------------------------------------------------------------------------
--- Company: Vaayoo Mantra Pvt. Ltf
--- Engineer: Ravi Damodaran
+-- Company:
+-- Engineer:
 --
--- Create Date: 03/16/2020 07:20:32 PM
+-- Create Date: 03/16/2020 09:01:49 PM
 -- Design Name:
--- Module Name: BUTTON_LED - Behavioral
--- Project Name: BUTTON_LED
+-- Module Name: test - AND_GATE
+-- Project Name:
 -- Target Devices:
 -- Tool Versions:
 -- Description:
@@ -31,19 +31,16 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity BUTTON_LED is
-  Port (
-  LED_OUT   : out STD_LOGIC;
-  BUTTON_IN : in  STD_LOGIC;
-  ENABLE    : in  STD_LOGIC
-   );
+entity AND_GATE is
+ Port (
+ A: in STD_LOGIC;
+ B: in STD_LOGIC;
+ C: out STD_LOGIC );
+end AND_GATE;
 
-end BUTTON_LED;
-
-architecture Behavioral of BUTTON_LED is
+architecture AND_GATE of test is
 
 begin
+C<=A and B;
 
-LED_OUT<= BUTTON_IN and ENABLE;
-
-end Behavioral;
+end AND_GATE;
