@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Mar 18 00:31:02 2020
+# Process ID: 3141
+# Current directory: /home/ravi/Desktop/VHDLtutorial/CoraZ7/Button_LED/Button_LED.runs/impl_1
+# Command line: vivado -log BUTTON_LED.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source BUTTON_LED.tcl -notrace
+# Log file: /home/ravi/Desktop/VHDLtutorial/CoraZ7/Button_LED/Button_LED.runs/impl_1/BUTTON_LED.vdi
+# Journal file: /home/ravi/Desktop/VHDLtutorial/CoraZ7/Button_LED/Button_LED.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source BUTTON_LED.tcl -notrace

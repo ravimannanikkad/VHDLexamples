@@ -2,8 +2,8 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Mon Mar 16 21:12:40 2020
-# Process ID: 1786
+# Start of session at: Wed Mar 18 00:55:09 2020
+# Process ID: 10663
 # Current directory: /home/ravi/Desktop/VHDLtutorial/CoraZ7/Button_LED/Button_LED.runs/synth_1
 # Command line: vivado -log BUTTON_LED.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source BUTTON_LED.tcl
 # Log file: /home/ravi/Desktop/VHDLtutorial/CoraZ7/Button_LED/Button_LED.runs/synth_1/BUTTON_LED.vds
