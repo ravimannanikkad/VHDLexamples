@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1584389558">
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1584489307">
   <File Type="VDS-TIMING-PB" Name="BUTTON_LED_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="BUTTON_LED_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="BUTTON_LED.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="BUTTON_LED_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="BUTTON_LED_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="BUTTON_LED_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="BUTTON_LED.vds"/>
   <File Type="REPORTS-TCL" Name="BUTTON_LED_reports.tcl"/>
   <File Type="PA-TCL" Name="BUTTON_LED.tcl"/>
-  <File Type="RDS-RDS" Name="BUTTON_LED.vds"/>
-  <File Type="RDS-PROPCONSTRS" Name="BUTTON_LED_drc_synth.rpt"/>
-  <File Type="RDS-UTIL" Name="BUTTON_LED_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="BUTTON_LED_utilization_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/BUTTON_LED.vhd">
@@ -51,9 +51,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-| Date         : Mon Mar 16 21:14:11 2020
+| Date         : Wed Mar 18 00:56:34 2020
 | Host         : ravi-ThinkPad-T420s running 64-bit Ubuntu 18.04.4 LTS
 | Command      : report_methodology -file BUTTON_LED_methodology_drc_routed.rpt -pb BUTTON_LED_methodology_drc_routed.pb -rpx BUTTON_LED_methodology_drc_routed.rpx
 | Design       : BUTTON_LED
@@ -23,12 +23,23 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 0
-+------+----------+-------------+------------+
-| Rule | Severity | Description | Violations |
-+------+----------+-------------+------------+
-+------+----------+-------------+------------+
+             Violations found: 2
++-----------+----------+-------------------------------+------------+
+| Rule      | Severity | Description                   | Violations |
++-----------+----------+-------------------------------+------------+
+| TIMING-18 | Warning  | Missing input or output delay | 2          |
++-----------+----------+-------------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on RESET_IN relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An output delay is missing on LED_OUT relative to clock(s) sys_clk_pin
+Related violations: <none>
+
 
