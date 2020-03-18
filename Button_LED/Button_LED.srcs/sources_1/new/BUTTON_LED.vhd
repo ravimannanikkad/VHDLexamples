@@ -53,21 +53,23 @@ signal COUNTER: integer:=1;
 signal HZ_OUT : std_logic := '0';
 
 begin
+------------------------------------------------------------------------------------------------------------------------------
   --Sequencial Process for dividing the clock
-  process(CLK_IN,RESET_IN)
-  begin
-    if (RESET_IN ='1') then
-      COUNTER <= 1;
-      HZ_OUT <= '0';
-    elsif (CLK_IN'event and CLK_IN='1') then
-      COUNTER<=COUNTER+1;
-      if (COUNTER = 125000000) then
-        HZ_OUT<= NOT HZ_OUT;
-        COUNTER <= 1;
-      end if;
-    end if;
-    LED_OUT<=HZ_OUT;
+  process(CLK_IN,RESET_IN)                         -- This is taking inputs CLK_IN and RESET_IN
+  begin                                            -- Process begins
+    if (RESET_IN ='1') then                        -- If reset button is pressed, check condition
+      COUNTER <= 1;                                -- Make counter value =1
+      HZ_OUT <= '0';                               -- Reset HZ_OUT to 0
+    elsif (CLK_IN'event and CLK_IN='1') then       -- Else check condition that the CLK_IN is rising edge and CLK in is high
+      COUNTER<=COUNTER+1;                          -- increment the counter
+      if (COUNTER = 125000000) then                -- check if the counter value reaches 125000000 then
+        HZ_OUT<= NOT HZ_OUT;                       -- change the state of the HZ_OUT value
+        COUNTER <= 1;                              -- Reset the counter
+      end if;                                      -- End the counter check
+    end if;                                        -- End the Rising edge check
+    LED_OUT<=HZ_OUT;                               -- Give this output to the LED
+  end process;                                     -- End the Process
+------------------------------------------------------------------------------------------------------------------------------
 
-  end process;
 
 end Behavioral;
